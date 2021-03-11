@@ -1,0 +1,25 @@
+.carousel {
+  margin: var(--u-single) 0;
+  padding: var(--u-single) 0;
+  background-color: white;
+
+  @include aspect-ratio(66%);
+
+  .item {
+    position: relative;
+  }
+
+  div {
+    height: 100%;
+  }
+
+  img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .label {
+    @include caption;
+  }
+}

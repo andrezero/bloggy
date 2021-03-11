@@ -1,0 +1,18 @@
+@mixin aspect-ratio($pct) {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    padding-top: $pct;
+  }
+
+  .items {
+    position: absolute;
+    top: var(--u-single);
+    bottom: var(--u-single);
+    left: 0;
+    right: 0;
+  }
+}

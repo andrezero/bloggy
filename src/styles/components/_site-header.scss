@@ -1,0 +1,11 @@
+#site-header {
+  padding: 5vh 0 1vh;
+  text-align: center;
+  color: var(--scheme-fg-inv1);
+  background-color: var(--scheme-bg-inv1);
+}
+
+#site-header h1 {
+  font-size: var(--type-size-title);
+  text-transform: uppercase;
+}

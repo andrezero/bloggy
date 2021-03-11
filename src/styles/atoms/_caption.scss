@@ -1,0 +1,15 @@
+@mixin caption() {
+  position: absolute;
+  bottom: var(--u-half);
+  left: var(--u-single);
+  padding: var(--u-quarter);
+  color: var(--scheme-fg-inv2);
+  text-align: left;
+  font-size: var(--type-size-small);
+  z-index: 1;
+  background-color: var(--scheme-bg-inv2);
+
+  a {
+    color: var(--scheme-a-inv);
+  }
+}

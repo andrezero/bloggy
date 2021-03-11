@@ -1,0 +1,37 @@
+.slidy-root {
+  .slidy-prev,
+  .slidy-next {
+    top: var(--u-single);
+    transform: translateY(-100%);
+    width: var(--u-dotted);
+    height: var(--u-dotted);
+  }
+
+  .slidy-prev {
+    left: var(--u-single);
+    z-index: 1;
+  }
+
+  .slidy-next {
+    right: var(--u-single);
+  }
+
+  @include tablet {
+    .slidy-prev {
+      left: var(--u-half);
+    }
+
+    .slidy-next {
+      right: var(--u-half);
+    }
+  }
+
+  @include desktop {
+    .slidy-prev,
+    .slidy-next {
+      top: var(--u-half);
+      width: var(--u-single);
+      height: var(--u-single);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.container {
+  margin: 0 var(--u-single);
+}
+
+@include tablet {
+  .container {
+    margin: 0 var(--u-double);
+  }
+}
+
+@include desktop {
+  .container {
+    width: calc(#{$breakpoint-desktop} - var(--u-double));
+    margin: 0 auto;
+  }
+}

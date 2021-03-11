@@ -1,0 +1,33 @@
+:root {
+  --u-quarter: 0.375rem;
+  --u-half: 0.75rem;
+  --u-single: 1.5rem;
+  --u-dotted: 2.25rem;
+  --u-double: 3rem;
+  --u-quad: 6rem;
+  --u-octo: 12rem;
+}
+
+@include tablet {
+  :root {
+    --u-quarter: 0.5rem;
+    --u-half: 1rem;
+    --u-single: 2rem;
+    --u-dotted: 3rem;
+    --u-double: 4rem;
+    --u-quad: 8rem;
+    --u-octo: 16rem;
+  }
+}
+
+@include desktop {
+  :root {
+    --u-quarter: 0.75rem;
+    --u-half: 1.5rem;
+    --u-single: 3rem;
+    --u-dotted: 4.5rem;
+    --u-double: 6rem;
+    --u-quad: 12rem;
+    --u-octo: 24rem;
+  }
+}

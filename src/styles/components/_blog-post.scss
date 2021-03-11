@@ -1,0 +1,25 @@
+.blog-post {
+  h2 {
+    color: var(--scheme-fg-alt);
+  }
+
+  summary {
+    margin-bottom: var(--u-single);
+    font-size: var(--type-size-large);
+    font-style: italic;
+  }
+
+  ul {
+    padding-left: var(--u-single);
+  }
+
+  li {
+    padding-left: var(--u-half);
+
+    &::marker {
+      @include type-heading;
+      color: var(--scheme-fg-alt);
+      content: '#';
+    }
+  }
+}

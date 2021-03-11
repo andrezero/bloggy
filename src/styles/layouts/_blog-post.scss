@@ -1,0 +1,62 @@
+.layout-blog-post {
+  .hero-banner {
+    height: 66vh;
+  }
+
+  article {
+    overflow: hidden;
+  }
+
+  #site-main {
+    margin-bottom: var(--u-octo);
+  }
+
+  @include tablet {
+    article {
+      /* create gap for text wrapping */
+
+      .contents {
+        position: relative;
+      }
+
+      .contents::before {
+        display: block;
+        content: '';
+        float: left;
+        width: 66%;
+        margin-bottom: var(--u-dotted);
+        padding-top: 44%;
+      }
+
+      /* move carousel into the gap */
+
+      .carousel {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+        width: calc(66% - var(--u-single));
+
+        &::before {
+          padding-top: 66%;
+        }
+      }
+
+      /* prevent content after carousel from wrapping around the float */
+
+      .carousel + * {
+        clear: both;
+      }
+    }
+  }
+
+  @include desktop {
+    #site-main {
+      .container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        column-gap: var(--u-double);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+#site-footer {
+  padding: var(--u-double) var(--u-single) var(--u-quad);
+  text-align: center;
+  color: var(--scheme-fg-inv2);
+  background-color: var(--scheme-bg-inv2);
+}
+
+#site-footer a {
+  color: var(--scheme-a-inv);
+}
+
+#site-footer span {
+  font-size: var(--type-size-small);
+}

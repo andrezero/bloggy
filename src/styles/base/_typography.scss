@@ -1,0 +1,82 @@
+@mixin type-heading {
+  font-family: var(--type-headings);
+  font-weight: var(--type-weight-extra);
+  line-height: var(--type-height-compact);
+}
+
+:root {
+  --type-headings: 'Proza Libre', Helvetica, FreeSans, sans-serif;
+  --type-base: 'Open Sans', Roboto, FreeSans, sans-serif;
+  --type-size-title: calc(2rem + 2vw);
+  --type-size-h2: calc(3rem + 0.5vw);
+  --type-size-h3: calc(2.25rem + 0.5vw);
+  --type-size-h4: calc(1.75rem + 0.5vw);
+  --type-size-large: 2rem;
+  --type-size-base: 1.5rem;
+  --type-size-small: 1.25rem;
+  --type-weight-base: 400;
+  --type-weight-bold: 600;
+  --type-weight-extra: 800;
+  --type-height-base: 1.5;
+  --type-height-compact: 1.25;
+}
+
+@include tablet {
+  :root {
+    --type-size-title: calc(4rem + 2vw);
+    --type-size-large: 2rem;
+    --type-size-base: 1.75rem;
+    --type-size-small: 1.5rem;
+  }
+}
+
+@include desktop {
+  :root {
+    --type-size-title: calc(6rem + 2vw);
+    --type-size-large: 2.25rem;
+    --type-size-base: 2rem;
+    --type-size-small: 1.5rem;
+  }
+}
+
+html {
+  font-family: var(--type-base);
+  font-size: 62.5%;
+  font-weight: var(--type-weight-base);
+  line-height: var(--type-height-base);
+}
+
+body {
+  font-size: var(--type-size-base);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include type-heading;
+}
+
+h2 {
+  margin: var(--u-double) 0 var(--u-single);
+  font-size: var(--type-size-h2);
+}
+
+h3 {
+  margin: var(--u-double) 0 var(--u-single);
+  font-size: var(--type-size-h3);
+}
+
+h4 {
+  margin: var(--u-single) 0 var(--u-half);
+  font-size: var(--type-size-h4);
+  font-weight: 700;
+}
+
+p {
+  margin: var(--u-half) 0 var(--u-half);
+}
+
+strong {
+  font-weight: var(--type-weight-bold);
+}

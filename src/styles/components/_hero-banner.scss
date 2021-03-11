@@ -1,0 +1,21 @@
+.hero-banner {
+  background-size: cover;
+  position: relative;
+  min-height: var(--u-quad);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .caption {
+    @include caption;
+  }
+
+  @media (min-width: 375px) {
+    br {
+      display: none;
+    }
+  }
+}

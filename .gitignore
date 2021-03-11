@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+
+# build
+/dist
+/build
+
+# testing
+lib-cov
+coverage
+.nyc_output
+
+# ide
+.vscode/*
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# os
+.DS_Store
+Thumbs.db
+~
